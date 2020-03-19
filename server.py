@@ -41,7 +41,7 @@ class Battlesnake(object):
         data = cherrypy.request.json
 
         # Choose a random direction to move in
-        possible_moves = ["up", "down", "left", "right"]
+        possible_moves = ["up", "left", "right"]
         move = random.choice(possible_moves)
 
         print(f"MOVE: {move}")
